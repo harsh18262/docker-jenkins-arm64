@@ -4,9 +4,7 @@ ARG user=jenkins
 ARG group=jenkins
 ARG http_port=8080
 ARG agent_port=50000
-ARG JENKINS_HOME=/var/jenkins_home
 
-ENV JENKINS_HOME $JENKINS_HOME
 ENV JENKINS_SLAVE_AGENT_PORT ${agent_port}
 
 ENV APT_KEY_DONT_WARN_ON_DANGEROUS_USAGE=1
